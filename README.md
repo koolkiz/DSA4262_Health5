@@ -32,33 +32,32 @@ To set up your development environment, follow these steps:
 1. **Never Work Directly on the `main` Branch**
 
 2. **Always pull the lastest change**
-```
-git pull origin main
-```
 
 3. **Create a New Branch or Use an Existing One**
-```sh
-git checkout -b feature-branch
-```
-OR switch to your existing branch:
-```sh
-git checkout existing-branch
-```
+    ```sh
+    git checkout -b feature-branch
+    ```
+
+    OR switch to your existing branch:
+
+    ```sh
+    git checkout existing-branch
+    ```
 
 4. **Add New Dependencies**
 
-If you install new packages, update `requirements.txt`:
-```sh
-pip freeze > requirements.txt
-```
+    If you install new packages, update `requirements.txt`:
+    ```sh
+    pip freeze > requirements.txt
+    ```
 
 5. **Submit a Pull Request (PR)**
 - Commit and Push your branch:
-```sh
-git add
-git commit --m "add ur commit msg"
-git push
-```
+    ```sh
+    git add
+    git commit --m "add ur commit msg"
+    git push
+    ```
 - Open a Pull Request on GitHub.
 - Request for code reviewers before merging.
 
