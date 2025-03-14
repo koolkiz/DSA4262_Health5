@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 appnope==0.1.4
 asttokens==3.0.0
 comm==0.2.2
@@ -33,3 +34,10 @@ tornado==6.4.2
 traitlets==5.14.3
 tzdata==2025.1
 wcwidth==0.2.13
+=======
+python-docx
+transformers
+torch
+torchvision
+torchaudio
+>>>>>>> 14a197524a22a8136b58e53999adfd0eed762ce1
