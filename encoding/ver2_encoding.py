@@ -16,38 +16,55 @@ mass enhancement margin (4 factors + blanks) -> ordinal**
 """
 
 import pandas as pd
+import numpy as np
 from sklearn.preprocessing import OneHotEncoder, OrdinalEncoder
 
 # Load the dataset
 df = pd.read_csv("..\\data\\clinical_data.csv")
 
-df.columns = df.columns.str.lower()
+df.fillna("Unknown")
 
 # Mapping for ordinal encoding
 ordinal_mappings = {
-    "breast density": ["A", "B", "C", "D"],
-    "pathology": ["Benign", "High Risk", "Malignant"],
+    "Breast density": ["A", "B", "C", "D"],
 
-    # EDIT HERE FOR MAPPINGS AFTER FACTOR LEVELS ARE CONFIRMED
-    "mass density" : [],
-    "mass shape": [],
-    "mass margin": [],
-    "enhancement patterns": [],
-    "mass enhancement shape": [],
-    "mass enhancement margin": [],
-    ###
+    "Pathology Classification/ Follow up": ["Normal", "Benign", "Malignant"],
+
+    # FACTOR LEVELS
+    "Mass density" : ["Equal", "Equal with overlying macrocalcification", 
+                      "High - Equal", "High", 
+                      "High with overlying microcalcification", "IMLN"],
+
+    "Mass shape": ["Oval", "Round - Oval", "Irregular - Oval", 
+                    "Irregular - Round", "Irregular"],
+
+    "Mass margin": ["Circumscribed", "Circumscribed - Obscured", "Partially obscured",  
+                    "Obscured", "Indistinct", "Indistinct - Circumscribed",  
+                    "Lobulated - Partially Obscured", "Microlobulated - Circumscribed",  
+                    "Microlobulated", "Speculated - Circumscribed",  
+                    "Speculated", "Speculated - Ulcerating"],
+
+    "Enhancement pattern": ["Non Enhancement", "Other", "Homogenous",  
+                        "Focus enhancement", "Focal enhancement",  
+                        "Stippled", "Enhancing mass", "Heterogenous",  
+                        "Irregular rim", "Rim Enhancement", "IMLN"],
+
+    "Mass enhancement shape": ["Oval", "Round - Oval", "Round", "Irregular"],
+
+    "Mass enhancement margin": ["Circumscribed", "Lobulated circumscribed", 
+                                "Irregular", "Speculated"],
 }
 
 # Apply ordinal encoding
 for col, categories in ordinal_mappings.items():
     if col in df.columns:
-        encoder = OrdinalEncoder(categories=[categories])
+        encoder = OrdinalEncoder(categories=[categories], handle_unknown="use_encoded_value", unknown_value=np.nan)
         df[col] = encoder.fit_transform(df[[col]])
 
 # Apply one-hot encoding for the specified columns
 one_hot_columns = [
-    "side", "type", "view", 
-    "single/multiple (mass)","single/multiple (mass enhancement)"
+    "Side", "Type", "View", "Single/Multiple (Mass)",
+    "Single/Multiple (Mass enhancement)"
 ]
 
 # Initializing OneHotEncoder
@@ -60,7 +77,7 @@ for col in one_hot_columns:
         df = df.drop(columns=[col]).join(ohe_df)
 
 # Save the encoded dataset
-# df.to_csv("clinical_data_encoded_ver2.csv", index=False)
+df.to_csv("../data/clinical_data_encoded_ver2.csv", index=False)
 
 # Display first few rows
-print(df.head())
+# print(df.head())

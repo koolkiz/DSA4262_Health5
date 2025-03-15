@@ -21,12 +21,10 @@ from sklearn.preprocessing import OneHotEncoder, OrdinalEncoder
 # Load the dataset
 df = pd.read_csv("..\\data\\clinical_data.csv")
 
-df.columns = df.columns.str.lower()
-
 # Mapping for ordinal encoding
 ordinal_mappings = {
-    "breast density": ["A", "B", "C", "D"],
-    "pathology": ["Benign", "High Risk", "Malignant"],
+    "Breast density": ["A", "B", "C", "D"],
+    "Pathology Classification/ Follow up": ["Normal", "Benign", "Malignant"],
 }
 
 # Apply ordinal encoding
@@ -37,10 +35,10 @@ for col, categories in ordinal_mappings.items():
 
 # Apply one-hot encoding for the specified columns
 one_hot_columns = [
-    "side", "type", "view", 
-    "single/multiple (mass)", "mass density", "mass shape", "mass margin", 
-    "single/multiple (mass enhancement)", "enhancement patterns", 
-    "mass enhancement shape", "mass enhancement margin"
+    "Side", "Type", "View", 
+    "Single/Multiple (Mass)", "Mass density", "Mass shape", "Mass margin", 
+    "Single/Multiple (Mass enhancement)", "Enhancement pattern", 
+    "Mass enhancement shape", "Mass enhancement margin"
 ]
 
 # Initializing OneHotEncoder
@@ -53,7 +51,7 @@ for col in one_hot_columns:
         df = df.drop(columns=[col]).join(ohe_df)
 
 # Save the encoded dataset
-# df.to_csv("clinical_data_encoded_ver1.csv", index=False)
+df.to_csv("../data/clinical_data_encoded_ver1.csv", index=False)
 
 # Display first few rows
-print(df.head())
+# print(df.head())
