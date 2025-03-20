@@ -1,17 +1,31 @@
-from attn import CrossAttentionFusion
-import torch.nn as nn
+import numpy as np
+import pandas as pd
+import xgboost as xgb
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import accuracy_score
 
-class MultimodalClassifier(nn.Module):
-    def __init__(self, img_dim, csv_dim, embed_dim, num_classes):
-        super(MultimodalClassifier, self).__init__()
-        self.fusion_layer = CrossAttentionFusion(img_dim, csv_dim, embed_dim)
-        self.classifier = nn.Sequential(
-            nn.Linear(embed_dim, embed_dim // 2),
-            nn.ReLU(),
-            nn.Linear(embed_dim // 2, num_classes)
-        )
+# assume fused_features is the fused feature matrix from attention fusion 
+# definition to be changed based on the actual implementation
+fused_features = np.hstack([tabular_data_scaled, image_features])
 
-    def forward(self, img_features, csv_features):
-        fused_rep = self.fusion_layer(img_features, csv_features)
-        logits = self.classifier(fused_rep)
-        return logits
+X_train, X_test, y_train, y_test = train_test_split(fused_features, np.random.randint(0, 2, size=100), test_size=0.2, random_state=42)
+
+xgb_model = xgb.XGBClassifier(
+    objective='binary:logistic',
+    eval_metric='logloss',
+    use_label_encoder=False,
+    max_depth=6,
+    n_estimators=100,
+    learning_rate=0.1
+)
+
+# 7. Train the Model
+xgb_model.fit(X_train, y_train)
+
+# 8. Make Predictions
+y_pred = xgb_model.predict(X_test)
+
+# 9. Evaluate the Model
+accuracy = accuracy_score(y_test, y_pred)
+print(f'Accuracy: {accuracy * 100:.2f}%')
