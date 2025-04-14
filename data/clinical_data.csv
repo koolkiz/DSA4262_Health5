@@ -633,8 +633,8 @@ P113_L_CM_CC,113,L,CESM,67,B,5,Heterogenously enhancing mass,CC,malignant mass,1
 P113_L_CM_MLO,113,L,CESM,67,B,5,Heterogenously enhancing mass,MLO,malignant mass,1,Malignant,0,0,0,0,0,0,1,,,,,Single,Heterogenous,Irregular,Irregular
 P114_R_DM_CC,114,R,DM,62,B,4,Architectural distortion ,CC,"suspicious, architectural distortion",2,Benign,1,0,0,0,0,0,0,,,,,,,,
 P114_R_DM_MLO,114,R,DM,62,B,4,Architectural distortion ,MLO,"suspicious, architectural distortion",2,Benign,1,0,0,0,0,0,0,,,,,,,,
-P114_R_CM_CC,114,R,CESM,62,B,4,Focal ill defined faintly enhancing mass,CC,suspicious mass ,2,Benign,0,0,0,0,0,0,1,,,,,Single,Focal enhancement,Irregular,Irregular
-P114_R_CM_MLO,114,R,CESM,62,B,4,Focal ill defined faintly enhancing mass,MLO,suspicious mass ,2,Benign,0,0,0,0,0,0,1,,,,,Single,Focal enhancement,Irregular,Irregular
+P114_R_CM_CC,114,R,CESM,62,B,4,Focal ill defined faintly enhancing mass,CC,suspicious mass ,2,Benign,0,0,0,0,0,0,1,,,,,Single,Focal enhancement,Irregular,Irregular 
+P114_R_CM_MLO,114,R,CESM,62,B,4,Focal ill defined faintly enhancing mass,MLO,suspicious mass ,2,Benign,0,0,0,0,0,0,1,,,,,Single,Focal enhancement,Irregular,Irregular 
 P114_L_DM_CC,114,L,DM,62,B,1,Normal,CC,normal,2,Normal,0,0,0,0,0,0,0,,,,,,,,
 P114_L_DM_MLO,114,L,DM,62,B,1,Normal,MLO,normal,2,Normal,0,0,0,0,0,0,0,,,,,,,,
 P114_L_CM_CC,114,L,CESM,62,B,1,No mass or non mass enhancement,CC,normal,2,Normal,0,0,0,0,0,0,0,,,,,,,,
@@ -1203,8 +1203,8 @@ P213_R_CM_CC,213,R,CESM,45,B,1,No mass or non mass enhancement,CC,normal,1,Norma
 P213_R_CM_MLO,213,R,CESM,45,B,1,No mass or non mass enhancement,MLO,normal,1,Normal,0,0,0,0,0,0,0,,,,,,,,
 P213_L_DM_CC,213,L,DM,45,B,4,Architectural distortion and nipple retraction,CC,"suspicious architectural distortion, nipple retraction",1,Malignant,1,0,0,0,0,0,0,,,,,,,,
 P213_L_DM_MLO,213,L,DM,45,B,4,Architectural distortion and nipple retraction,MLO,"suspicious architectural distortion, nipple retraction",1,Malignant,1,0,0,0,0,0,0,,,,,,,,
-P213_L_CM_CC,213,L,CESM,45,B,4,Heterogenously enahncing mass with ductal extension and surrounding satellites ,CC,"suspicious mass, ductal extension, satellites",1,Malignant,0,0,0,0,0,0,1,,,,,Multiple,Heterogenous,Irregular,Irregular
-P213_L_CM_MLO,213,L,CESM,45,B,4,Heterogenously enahncing mass with ductal extension and surrounding satellites ,MLO,"suspicious mass, ductal extension, satellites",1,Malignant,0,0,0,0,0,0,1,,,,,Multiple,Heterogenous,Irregular,Irregular
+P213_L_CM_CC,213,L,CESM,45,B,4,Heterogenously enahncing mass with ductal extension and surrounding satellites ,CC,"suspicious mass, ductal extension, satellites",1,Malignant,0,0,0,0,0,0,1,,,,,Multiple,Heterogenous,Irregular,Irregular 
+P213_L_CM_MLO,213,L,CESM,45,B,4,Heterogenously enahncing mass with ductal extension and surrounding satellites ,MLO,"suspicious mass, ductal extension, satellites",1,Malignant,0,0,0,0,0,0,1,,,,,Multiple,Heterogenous,Irregular,Irregular 
 P214_R_DM_CC,214,R,DM,45,C,1,Normal,CC,normal,1,Normal,0,0,0,0,0,0,0,,,,,,,,
 P214_R_DM_MLO,214,R,DM,45,C,1,Normal,MLO,normal,1,Normal,0,0,0,0,0,0,0,,,,,,,,
 P214_R_CM_CC,214,R,CESM,45,C,1,No mass or non mass enhancement,CC,normal,1,Normal,0,0,0,0,0,0,0,,,,,,,,
@@ -1234,7 +1234,7 @@ P217_L_CM_MLO,217,L,CESM,48,C,3,Faint enhancing mass with dark internal septatio
 P218_R_DM_CC,218,R,DM,36,C,1,Normal,CC,normal,1,Normal,0,0,0,0,0,0,0,,,,,,,,
 P218_R_CM_CC,218,R,CESM,36,C,1,No mass or non mass enhancement,CC,normal,1,Normal,0,0,0,0,0,0,0,,,,,,,,
 P218_L_DM_MLO,218,L,DM,36,C,4,Asymmetrical increased density with overlying microcalcification,MLO,"suspicious, asymmetry, microcalcifications",1,Malignant,0,0,1,1,0,0,0,,,,,,,,
-P218_L_CM_MLO,218,L,CESM,36,C,5,Segmental non mass enhancement with surroudning satellites,MLO,"malignant non mass, segmental, satellites",1,Malignant,0,0,0,0,1,0,1,,,,,Multiple,Heterogenous,Irregular,Irregular
+P218_L_CM_MLO,218,L,CESM,36,C,5,Segmental non mass enhancement with surroudning satellites,MLO,"malignant non mass, segmental, satellites",1,Malignant,0,0,0,0,1,0,1,,,,,Multiple,Heterogenous,Irregular,Irregular 
 P219_L_DM_MLO,219,L,DM,39,B,1,Normal,MLO,normal,1,Normal,0,0,0,0,0,0,0,,,,,,,,
 P219_L_CM_MLO,219,L,CESM,39,B,1,No mass or non mass enhancement,MLO,normal,1,Normal,0,0,0,0,0,0,0,,,,,,,,
 P220_R_DM_CC,220,R,DM,68,B,5,High density mass with speculated margin and edema pattern with asymmetrical increased density and overlying microcalcifications,CC,"suspicious mass, speculated, edema, asymmetry, microcalcifications",1,Malignant,0,0,1,1,0,1,0,Multiple,High with overlying microcalcification,Irregular,Speculated,,,,
@@ -1435,8 +1435,8 @@ P253_L_CM_CC,253,L,CESM,46,B,1,No mass or non mass enhancement,CC,normal,1,Norma
 P253_L_CM_MLO,253,L,CESM,46,B,1,No mass or non mass enhancement,MLO,normal,1,Normal,0,0,0,0,0,0,0,,,,,,,,
 P254_R_DM_CC,254,R,DM,50,C,3,Focal asymmetrical increased density ,CC,focal asymmetry,1,Malignant,0,0,1,0,0,0,0,,,,,,,,
 P254_R_DM_MLO,254,R,DM,50,C,3,Focal asymmetrical increased density ,MLO,focal asymmetry,1,Malignant,0,0,1,0,0,0,0,,,,,,,,
-P254_R_CM_CC,254,R,CESM,50,C,4,Focal ill defined enhancing mass,CC,suspicous mass,1,Malignant,0,0,0,0,0,0,1,,,,,Single,Heterogenous,Irregular,Irregular
-P254_R_CM_MLO,254,R,CESM,50,C,4,Focal ill defined enhancing mass,MLO,suspicous mass,1,Malignant,0,0,0,0,0,0,1,,,,,Single,Heterogenous,Irregular,Irregular
+P254_R_CM_CC,254,R,CESM,50,C,4,Focal ill defined enhancing mass,CC,suspicous mass,1,Malignant,0,0,0,0,0,0,1,,,,,Single,Heterogenous,Irregular,Irregular 
+P254_R_CM_MLO,254,R,CESM,50,C,4,Focal ill defined enhancing mass,MLO,suspicous mass,1,Malignant,0,0,0,0,0,0,1,,,,,Single,Heterogenous,Irregular,Irregular 
 P254_L_DM_CC,254,L,DM,50,C,1,Normal,CC,normal,1,Normal,0,0,0,1,0,0,0,,,,,,,,
 P254_L_DM_MLO,254,L,DM,50,C,2,Benign macrocalcification,MLO,benign macrocalcification,1,Benign,0,0,0,1,0,0,0,,,,,,,,
 P254_L_CM_CC,254,L,CESM,50,C,1,No mass or non mass enhancement,CC,normal,1,Normal,0,0,0,0,0,0,0,,,,,,,,
@@ -1476,7 +1476,7 @@ P259_R_CM_MLO,259,R,CESM,52,C,1,No mass or non mass enhancement,MLO,normal,1,Nor
 P259_L_DM_CC,259,L,DM,52,C,4,High density mass with indistinct margin ,CC,"suspicious mass, indistinct",1,Malignant,0,0,0,1,0,1,0,Multiple,High,Irregular,Indistinct,,,,
 P259_L_DM_MLO,259,L,DM,52,C,4,High density mass with indistinct margin and cluster of microcalcifications,MLO,"suspicious mass, indistinct, clusters, microcalcifications",1,Malignant,0,0,0,1,0,1,0,Multiple,High with overlying microcalcification,Irregular,Indistinct,,,,
 P259_L_CM_CC,259,L,CESM,52,C,5,Two irregular heterogenously enhancing masses ,CC,"malignant mass, multiple, multifocal, irregular",1,Malignant,0,0,0,0,0,0,1,,,,,Multiple,Heterogenous,Irregular,Irregular
-P259_L_CM_MLO,259,L,CESM,52,C,5,Two irregular heterogenously enhancing masses ,MLO,"malignant mass, multiple, multifocal, irregular",1,Malignant,0,0,0,0,0,0,1,,,,,Multiple,Heterogenous,Irregular,Irregular
+P259_L_CM_MLO,259,L,CESM,52,C,5,Two irregular heterogenously enhancing masses ,MLO,"malignant mass, multiple, multifocal, irregular",1,Malignant,0,0,0,0,0,0,1,,,,,Multiple,Heterogenous,Irregular,Irregular 
 P260_R_DM_CC,260,R,DM,66,B,5,Two high density masses with speculated margin and edema pattern,CC,"malignant mass, multiple, speculated, edema ",1,Malignant,0,0,1,0,0,1,0,Multiple,High,Irregular,Speculated,,,,
 P260_R_DM_MLO,260,R,DM,66,B,5,Two high density masses with speculated margin and edema pattern,MLO,"malignant mass, multiple, speculated, edema ",1,Malignant,0,0,1,0,0,1,0,Multiple,High,Irregular,Speculated,,,,
 P260_R_CM_CC,260,R,CESM,66,B,5,Three heterogenously enhancing masses with speculated margin,CC,"malignant mass, multiple, multicentric, speculated",1,Malignant,0,0,0,0,0,0,1,,,,,Multiple,Heterogenous,Irregular,Speculated
@@ -1520,7 +1520,7 @@ P264_L_CM_MLO,264,L,CESM,65,C,5,Heterogenously enhancing mass with speculated ma
 P265_R_DM_CC,265,R,DM,39,C,4,High density mass with microlobulated margin,CC,"suspicous mass,microlobulated",1,Malignant,0,0,1,0,0,1,0,Single,High,Irregular,Microlobulated,,,,
 P265_R_DM_MLO,265,R,DM,39,C,3,Asymmetrical increased density ,MLO,asymmetry,1,Malignant,0,0,1,0,0,0,0,,,,,,,,
 P265_R_CM_CC,265,R,CESM,39,C,5,Heterogenously enhancing mass with irregular margin$Stippled enhancement,CC,"suspicous mass, heterogenous, adenosis",1,Malignant,0,0,0,0,0,0,1,,,,,Single,Heterogenous,Irregular,Irregular
-P265_R_CM_MLO,265,R,CESM,39,C,5,Heterogenously enhancing mass with irregular margin$Stippled enhancement,MLO,"suspicous mass, heterogenous, adenosis",1,Malignant,0,0,0,0,0,0,1,,,,,Single,Heterogenous,Irregular,Irregular
+P265_R_CM_MLO,265,R,CESM,39,C,5,Heterogenously enhancing mass with irregular margin$Stippled enhancement,MLO,"suspicous mass, heterogenous, adenosis",1,Malignant,0,0,0,0,0,0,1,,,,,Single,Heterogenous,Irregular,Irregular 
 P265_L_DM_CC,265,L,DM,39,C,4,Diffuse edematous changes,CC,edema,1,Malignant,0,0,1,0,0,0,0,,,,,,,,
 P265_L_DM_MLO,265,L,DM,39,C,4,Diffuse edematous changes,MLO,edema,1,Malignant,0,0,1,0,0,0,0,,,,,,,,
 P265_L_CM_CC,265,L,CESM,39,C,4,Regional non mass enhancement ,CC,"suspicious non mass, regional",1,Malignant,0,0,0,0,1,0,0,,,,,,,,
