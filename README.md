@@ -1,7 +1,5 @@
 # DSA4262_Health5
 
-<<<<<<< HEAD
-
 
 ## Setting Up Virtual Environment
 
